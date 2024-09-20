@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+:root{
+    --color-primary: #ff0000;
+    --color-secundary: #000000;
+    --color-white:  #ffffff;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    height: 30vh;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo{
+    width: 15%;
+    height: 60%;
+    background-color: var(--color-secundary);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+nav ul a{
+    color: var(--color-white);
+}
+
+#produtos{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#produtos > div {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#produto1, #produto2{
+    width: 40%;
+    height: 100%;
+    background-color: var(--color-secundary);
+}
+
+#produtos_informacoes{
+    height: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+#sobre{
+    min-height: 80vh;
+    padding: 0 2em;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer{
+    height: 20vh;
+    width: 100%;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer a{
+    color: var(--color-white);
+}
+
+@media (max-width: 767px) {
+    header{
+        flex-direction: column;
+    }
+
+    #produtos{
+        flex-direction: column;
+    }
+
+    #produtos > div{
+        margin-top: 16px;
+    }
+
+    footer div{
+        width: 50%;
+        text-align: center;
+    }
+}
