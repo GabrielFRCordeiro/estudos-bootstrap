@@ -1,0 +1,67 @@
+:root{
+    --nav_color: #111111;
+    --btn_nav_primary: #ffffff;
+    --btn_nav_hover: #c8aa64;
+    --btn_primary: #00B2CF;
+    --menu_gray: #373737;
+    --color-font: #ffffff;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+#nav_bar{
+    background-color: var(--nav_color);
+}
+
+#nav_bar div ul li a{
+    color: var(--btn_nav_primary);
+}
+
+#nav_bar div ul li a:hover{
+    color: var(--btn_nav_hover);
+}
+
+#dropdown_menu_fase{
+    background-color: var(--menu_gray);
+}
+
+#btn_pesquisar{
+    background-color: var(--btn_primary);
+    border: none;
+    color: var(--btn_nav_primary);
+}
+
+/* #banner{
+    width: 100%;
+    height: 95%;
+    overflow: hidden;
+    position: absolute;
+}
+
+#videos{
+    position: absolute;
+    width: 100%;
+}
+
+#logo_jogo{
+    position: relative;
+    width: 20%;
+    left: 40%;
+    top: 30%;
+}
+
+#btn_jogar{
+    position: relative;
+    width: 20%;
+    height: 8%;
+    border-radius: 8px;
+    left: 20%;
+    top: 45%;
+    border: none;
+    background-color: var(--btn_primary);
+    color: var(--color-font);
+    font-weight: 500;
+} */
